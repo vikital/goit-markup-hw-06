@@ -447,7 +447,7 @@ color: var(--secondary-bgc);
 }
 
 .subscribe-wrap {
-  margin-left: 80px;
+  margin-left: auto;
 }
 .subscribe-title {
 font-weight: 500;
@@ -496,6 +496,7 @@ border-radius: 4px;
 text-align: center;
 letter-spacing: 0.04em;
 color: var(--main-color-title);
+border: 0 solid transparent;
 transition: background-color var(--transition-smoothly);
 }
 .subscribe-btn:is(:hover, :focus){
@@ -699,6 +700,7 @@ color: var(--company-border);
   padding: 11px 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  color: var(--company-border);
   outline: none;
   transition: border-color var(--transition-smoothly);
 }
@@ -724,7 +726,7 @@ color: var(--company-border);
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: rgba(117, 117, 117, 0.5);
+  /* color: rgba(117, 117, 117, 0.5); */
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -736,6 +738,9 @@ color: var(--company-border);
 }
 .modal-comment:is(:hover, :focus) {
   border-color: var(--btn-color);
+}
+.modal-comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .check {
